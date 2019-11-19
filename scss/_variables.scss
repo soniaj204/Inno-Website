@@ -1,0 +1,65 @@
+// COLORS
+
+$primary: #f05a28;
+$primary-hover: #d84e26;
+
+$secondary: #054371;
+$secondary-hover: #063359;
+
+$grey: #e7e7e7;
+$grey-border: #d3d4dd;
+$blue: #17436e;
+$blue-heading: #1d3d5d;
+$blue-para: #495865;
+
+$black: #000000;
+$white: #ffffff;
+$grey-bg: #f5f5f5;
+$yellow: #f9e163;
+$green: #86df72;
+$purple: #2d2d5e;
+$lightblack: #2d2d2d;
+$lightblue: #58b4b7;
+$lightpurple: #6f3378;
+$red: #aa2900;
+$darkblue: #0c3c63;
+$darkblack: #141414;
+
+
+// FONTS
+
+$font-oswald: "Oswald", sans-serif;
+$font-robotoCondensed: "Roboto Condensed", sans-serif;
+$font-helvetica: Helvetica, sans-serif;
+
+
+// MEDIA QUERIES 
+
+$media-desktop-lg: "only screen and (min-width: 1200px) and (max-width: 1399px)";
+$media-desktop: "only screen and (min-width: 1025px) and (max-width: 1199px)";
+$media-tablet: "only screen and (min-width: 768px) and (max-width: 1024px)";
+$media-tablet-landscape: "only screen and (min-width: 992px) and (max-width: 1024px)";
+$media-phone-min: "only screen and (min-width: 768px)";
+$media-phone: "only screen and (max-width: 767px)";
+$media-phone-md: "only screen and (max-width: 639px)";
+$media-phone-sm: "only screen and (max-width: 479px)";
+
+
+/*
+
+@media #{$media-desktop-lg} {
+}
+@media #{$media-desktop} {
+}
+@media #{$media-tablet} {
+}
+@media #{$media-tablet-landscape} {
+}
+@media #{$media-phone} {
+}
+@media #{$media-phone-md} {
+}
+@media #{$media-phone-sm} {
+}
+
+*/

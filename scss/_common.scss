@@ -1,0 +1,47 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 1565px;
+  word-break: break-word;
+}
+
+.inner-wrapper {
+  margin: 0 0 40px 0;
+  height: calc(100% - 40px);
+}
+
+.col-padding-10 {
+  .row {
+    padding: 0 10px;
+  }
+  div[class^="col-"] {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.col-padding-15 {
+  .row {
+    padding: 0 7.5px;
+  }
+  div[class^="col-"] {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

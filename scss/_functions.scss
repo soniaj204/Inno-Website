@@ -1,0 +1,49 @@
+$theme-inno-colors: () !default;
+$theme-inno-colors: map-merge(
+  (
+    "primary": $primary,
+    "primary-hover": $primary-hover,
+    "secondary": $secondary,
+    "secondary-hover": $secondary-hover,
+    "grey": $grey,
+    "grey-border": $grey-border,
+    "blue": $blue,
+    "blue-heading": $blue-heading,
+    "blue-para": $blue-para,
+    "orange": $primary,
+    "orange-link": $primary,
+    "black": $black,
+    "white": $white,
+    "grey-bg": $grey-bg,
+    "yellow": $yellow,
+    "green": $green,
+    "purple": $purple,
+    "lightblack": $lightblack,
+    "lightblue": $lightblue,
+    "lightpurple": $lightpurple,
+    "red": $red,
+    "darkblue": $darkblue,
+    "darkblack": $darkblack
+  ),
+  $theme-inno-colors
+);
+
+@mixin bg-variant($parent, $color) {
+  #{$parent} {
+    background-color: $color !important;
+  }
+}
+
+@each $color, $value in $theme-inno-colors {
+  @include bg-variant(".bg-#{$color}", $value);
+}
+
+@mixin border-variant($parent, $color) {
+  #{$parent} {
+    border-color: $color !important;
+  }
+}
+
+@each $color, $value in $theme-inno-colors {
+  @include border-variant(".border-#{$color}", $value);
+}

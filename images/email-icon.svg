@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="15px" viewBox="0 0 18 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>emailicon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-184.000000, -6771.000000)" fill="#F35A2D">
+            <g id="Group-9" transform="translate(175.000000, 6760.000000)">
+                <g id="facebook-copy">
+                    <path d="M9,11 L9,26 L27,26 L27,11 L9,11 Z M18.333886,18.8571429 L13.32,13.8571429 L23.4,13.8571429 L18.333886,18.8571429 Z M14.04,18.2619048 L11.16,21.7142857 L11.16,15.2857143 L14.04,18.2619048 Z M15.8562814,19.5714286 L17.4301508,21.0595238 C17.6472362,21.2380952 17.8643216,21.3571429 18.1356784,21.3571429 C18.4070352,21.3571429 18.6241206,21.2380952 18.841206,21.0595238 L20.2522613,19.6904762 L23.4,23.1428571 L12.6,23.1428571 L15.8562814,19.5714286 Z M21.96,18.5726928 L24.84,15.2857143 L24.84,22.4285714 L21.96,18.5726928 Z" id="emailicon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

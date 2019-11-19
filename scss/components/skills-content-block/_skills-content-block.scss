@@ -1,0 +1,44 @@
+.skills-content-outline-block-wrapper {
+  .inner-wrapper {
+    margin: 0 0 10px 0;
+    height: calc(100% - 10px);
+  }
+
+  .content {
+    border: 1px solid $grey-border;
+    padding: 65px 30px;
+    height: 100%;
+
+    p {
+      padding: 5px 0 0 0;
+    }
+
+    h3 {
+      color: $blue-para;
+    }
+  }
+}
+
+.skills-content-bg-block-wrapper {
+  .listing {
+    background: $grey-bg;
+    padding: 30px 70px;
+  }
+
+  .inner-wrapper {
+    height: auto;
+    margin: 0;
+    padding: 40px 0;
+    border-bottom: 1px solid $grey-border;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  .content {
+    h3 {
+      color: $blue-para;
+    }
+  }
+}

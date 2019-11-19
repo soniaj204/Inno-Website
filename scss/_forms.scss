@@ -1,0 +1,90 @@
+label {
+  @include para;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-control {
+  border: 0;
+  border-bottom: 2px solid $blue-para;
+  height: 45px;
+  @include para;
+  background: transparent;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0;
+  outline: 0 !important;
+
+  ~ span.focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: $primary;
+    transition: 0.4s;
+  }
+
+  &:focus {
+    background: transparent;
+    ~ span.focus-border {
+      width: 100%;
+      transition: 0.4s;
+    }
+  }
+
+  &::placeholder {
+    color: $blue-para;
+  }
+}
+
+
+.form-check {
+    padding: 0;
+  
+    input {
+      position: absolute;
+      opacity: 0;
+    }
+  
+    label {
+      position: relative;
+      padding: 0 0 0 25px;
+  
+      &:before {
+        content: "";
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: text-top;
+        width: 18px;
+        height: 18px;
+        background: transparent;
+        border: 1px solid $primary;
+        position: absolute;
+        left: 0;
+        top: 8px;
+      }
+    }
+  
+    input:checked + label {
+      &:before {
+        background: $primary;
+      }
+  
+      &:after {
+        content: "";
+        position: absolute;
+        left: 4px;
+        top: 16px;
+        background: white;
+        width: 2px;
+        height: 2px;
+        box-shadow: 2px 0 0 $white, 4px 0 0 $white, 4px -2px 0 $white,
+          4px -4px 0 $white, 4px -6px 0 $white, 4px -8px 0 $white;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+  }

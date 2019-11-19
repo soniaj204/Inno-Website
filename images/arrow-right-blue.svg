@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="17px" viewBox="0 0 28 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icon/arrow-right</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="button/arrow" transform="translate(-179.000000, -26.000000)" fill="#054371">
+            <g id="icon/arrow-right" transform="translate(179.000000, 25.869127)">
+                <g id="Group-22" stroke-width="1" fill-rule="evenodd" transform="translate(0.000000, 7.130873)">
+                    <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="23" height="3"></rect>
+                </g>
+                <polygon id="Path-2" fill-rule="nonzero" points="16 2.2386293 18.0248835 0 27.1628976 8.63087281 18.0248835 17.2158422 16 15.0632632 22.7815991 8.63087281"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

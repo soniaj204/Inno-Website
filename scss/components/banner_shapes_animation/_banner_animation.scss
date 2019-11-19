@@ -1,0 +1,238 @@
+.animated-section {
+  position: relative;
+  margin: 20px 0 0 0;
+  width: 440px;
+
+  .bottom {
+    position: absolute;
+    bottom: 0;
+    width: 184px;
+    left: 127px;
+
+    .square {
+      position: absolute;
+      bottom: -124px;
+      left: 0;
+      width: 184px;
+      height: 184px;
+    }
+
+    .lines {
+      position: absolute;
+      left: 24px;
+      bottom: -150px;
+    }
+
+    .dots-group {
+      position: absolute;
+      top: -209px;
+      z-index: 1;
+      left: -49px;
+      width: 285px;
+    }
+  }
+
+  .top-left {
+    position: absolute;
+    left: -73px;
+    top: 17px;
+    .dots-group {
+      .rowwrap {
+        > div {
+        }
+      }
+    }
+
+    .triangle {
+      position: absolute;
+      top: -32px;
+      left: 128px;
+      transform: rotate(45deg);
+    }
+
+    .plus {
+      top: 68px;
+      left: 194px;
+    }
+  }
+
+  .top-right {
+    position: absolute;
+    top: 0;
+    right: 40px;
+
+    .square {
+      position: absolute;
+      top: -61px;
+      right: -57px;
+      width: 215px;
+      height: 215px;
+      background: none;
+      border: 5px solid;
+      overflow: hidden;
+
+      &::before {
+        content: "";
+        background: $grey;
+        width: 405px;
+        height: 405px;
+        border-radius: 50%;
+        position: absolute;
+        top: 58px;
+        left: -216px;
+      }
+    }
+
+    .lines {
+      position: absolute;
+      top: -37px;
+      right: -112px;
+    }
+
+    .circle {
+      position: absolute;
+      width: 17px;
+      height: 17px;
+      border: 5px solid;
+      border-radius: 50%;
+      top: -25px;
+      right: 15px;
+    }
+  }
+
+  .bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+
+    .triangle {
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid $primary;
+      transform: rotate(133deg);
+      position: absolute;
+      top: -32px;
+      left: -11px;
+    }
+
+    .circle {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      position: absolute;
+      top: -135px;
+      left: -19px;
+    }
+
+    .square {
+      position: absolute;
+      top: -174px;
+      left: -9px;
+      width: 15px;
+      height: 15px;
+      background: none;
+      border: 5px solid;
+    }
+  }
+
+  .bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    .square {
+      position: absolute;
+      top: -8px;
+      left: 44px;
+      width: 15px;
+      height: 15px;
+      background: none;
+      border: 5px solid;
+    }
+
+    .plus {
+      top: 28px;
+      left: -60px;
+    }
+
+    .hexagon {
+      top: -55px;
+      left: -5px;
+    }
+  }
+
+  .right-center {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    .hexagon {
+      width: 20px;
+      height: 11.55px;
+      background-color: #ffffff;
+      border-left: solid 5px;
+      border-right: solid 5px;
+      top: 193px;
+      left: 30px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        width: 14.14px;
+        height: 14.14px;
+        -webkit-transform: scaleY(0.5774) rotate(-45deg);
+        -ms-transform: scaleY(0.5774) rotate(-45deg);
+        transform: scaleY(0.5774) rotate(-45deg);
+        background-color: inherit;
+        left: -2.0711px;
+
+        top: -7.0711px;
+        border-top: solid 7.0711px $grey;
+        border-right: solid 7.0711px $grey;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        width: 14.14px;
+        height: 14.14px;
+        -webkit-transform: scaleY(0.5774) rotate(-45deg);
+        -ms-transform: scaleY(0.5774) rotate(-45deg);
+        transform: scaleY(0.5774) rotate(-45deg);
+        background-color: inherit;
+        left: -2.0711px;
+
+        bottom: -7.0711px;
+        border-bottom: solid 7.0711px $grey;
+        border-left: solid 7.0711px $grey;
+      }
+    }
+  }
+
+  .left-center {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .triangle {
+      width: 0;
+      height: 0;
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-left: 30px solid $primary;
+      transform: rotate(133deg);
+      position: absolute;
+      top: 141px;
+      left: 89px;
+    }
+
+    .circle {
+      top: 160px;
+      left: 40px;
+    }
+  }
+}

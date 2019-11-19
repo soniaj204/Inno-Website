@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="76px" height="90px" viewBox="0 0 76 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icon/startup</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-206.000000, -2609.000000)">
+            <g id="Group-6" transform="translate(206.000000, 2609.000000)">
+                <g id="icon/startup">
+                    <g id="services-icons-(innovify)">
+                        <g id="Group" fill-rule="nonzero">
+                            <rect id="Rectangle" fill="#E7E7E7" opacity="0.59891183" x="0.5" y="14.958" width="75" height="75.001"></rect>
+                            <g transform="translate(7.000000, 0.000000)" fill="#F05A28">
+                                <circle id="Oval" cx="31" cy="30.228" r="30.227"></circle>
+                                <rect id="Rectangle" x="36.824" y="69.012" width="2.319" height="5.061"></rect>
+                                <rect id="Rectangle" x="22.904" y="75.221" width="2.319" height="8.381"></rect>
+                                <rect id="Rectangle" x="43.722" y="70.885" width="2.319" height="7.204"></rect>
+                                <rect id="Rectangle" x="32.184" y="69.012" width="2.319" height="10.951"></rect>
+                                <rect id="Rectangle" x="27.543" y="69.012" width="2.32" height="8.348"></rect>
+                                <rect id="Rectangle" x="22.902" y="69.012" width="2.321" height="3.4"></rect>
+                                <rect id="Rectangle" x="15.729" y="69.012" width="2.321" height="3.4"></rect>
+                                <rect id="Rectangle" x="12.069" y="75.658" width="2.32" height="3.402"></rect>
+                            </g>
+                            <polygon id="Path" fill="#054371" points="55.098 54.065 47.705 45.164 47.705 23.304 38.022 11.094 28.341 23.304 28.341 45.163 20.947 54.065 20.947 60.635 28.341 60.635 28.341 66.614 47.705 66.614 47.705 60.635 55.098 60.635"></polygon>
+                            <g transform="translate(24.000000, 29.000000)" fill="#FFFFFF">
+                                <circle id="Oval" cx="14.023" cy="6.555" r="5.714"></circle>
+                                <polygon id="Path" points="0.774 25.065 2.897 25.065 2.897 4.506 0.774 5.53"></polygon>
+                                <polygon id="Path" points="27.271 25.065 25.147 25.065 25.147 4.506 27.271 5.53"></polygon>
+                                <rect id="Rectangle" x="12.861" y="25.065" width="2.322" height="6.521"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

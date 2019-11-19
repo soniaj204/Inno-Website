@@ -1,0 +1,301 @@
+.image-content-carousel-wrapper {
+    .inner-wrapper {
+      height: auto;
+    }
+  
+    .slides {
+      .carousel-innerwrapper {
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+  
+        @media #{$media-phone} {
+          flex-direction: column;
+        }
+  
+        .content {
+          width: 50%;
+          min-width: 50%;
+          background: $grey-bg;
+          padding: 120px 100px 140px;
+          position: relative;
+          left: -1000px;
+          // opacity: 0;
+          left: 0;
+  
+          @media #{$media-tablet} {
+            padding: 40px 100px 40px 40px;
+            width: 60%;
+            min-width: 60%;
+          }
+  
+          @media #{$media-phone} {
+            width: 100%;
+            order: 2;
+            left: auto;
+            padding: 70px;
+          }
+  
+          &.data-animate {
+            opacity: 1;
+            left: 0;
+            transition: left 1.0s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  
+            @media #{$media-phone} {
+              transition: none;
+              left: auto;
+            }
+          }
+  
+  
+          &.data-animate-rev {
+            opacity: 0;
+            left: -1000px;
+            transition: left 1.0s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  
+            @media #{$media-phone} {
+              transition: none;
+              left: auto;
+            }
+          }
+  
+          .innercontent {
+            max-width: 530px;
+          }
+  
+          h3 {
+            margin: 0 0 5px 0;
+          }
+  
+          p {
+            margin: 0 0 40px 0;
+          }
+  
+          .btn {
+            margin: 60px 0 0 0;
+          }
+        }
+  
+        .sideblock {
+          width: calc(50% + 100px);
+          min-width: calc(50% + 100px);
+          position: relative;
+          left: -500px;
+          opacity: 0;
+          left: -100px;
+          opacity: 1;
+  
+          @media #{$media-tablet} {
+            width: calc(40% + 70px);
+            min-width: calc(40% + 70px);
+          }
+  
+          @media #{$media-phone} {
+            width: 100%;
+            order: 1;
+            left: 0;
+          }
+  
+          &.data-animate {
+            left: -100px;
+            transition: left 1.0s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            opacity: 1;
+  
+            @media #{$media-tablet} {
+              left: -70px;
+            }
+  
+            @media #{$media-phone} {
+              transition: none;
+              left: 0;
+            }
+          }
+  
+  
+          &.data-animate-rev {
+            opacity: 0;
+            left: -500px;
+            transition: -left 1.0s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  
+            @media #{$media-phone} {
+              transition: none;
+              left: auto;
+            }
+          }
+  
+          .innerblock {
+          }
+        }
+      }
+    }
+  }
+  
+
+  .owl-carousel {
+  .owl-dots {
+    width: calc(50% + 100px);
+    left: calc(50% - 100px);
+    position: absolute;
+    bottom: 60px;
+    text-align: center;
+  
+    @media #{$media-tablet} {
+      width: calc(40% + 70px);
+      left: calc(60% - 70px);
+      bottom: 40px;
+    }
+  
+    @media #{$media-phone} {
+      bottom: -50px;
+      left: 0;
+      width: 100%;
+    }
+  
+    // li {
+    //   width: auto;
+    //   height: auto;
+    //   padding: 0 15px;
+    //   margin: 0;
+  
+      button.owl-dot {
+        width: 12px;
+        height: 12px;
+        opacity: 0.28;
+        background-color: $secondary;
+        padding: 0;
+        transition: all 0.5s;
+        margin: 0 15px;
+  
+        &::before {
+          display: none;
+        }
+        
+
+        &.active,
+        &:hover {
+         
+            background-color: $primary;
+            opacity: 1;
+         
+        }
+      }
+  
+     
+    // }
+  }
+}
+  
+
+
+
+.slides {
+    padding: 0;
+    width: 100%;
+    height: 420px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 420px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+      opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+    width: 100%;
+    bottom: 9px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+
+.nav-dots .nav-dot {
+    top: -5px;
+    width: 11px;
+    height: 11px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+    background: rgba(0, 0, 0, 0.8);
+}

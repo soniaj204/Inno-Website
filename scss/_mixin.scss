@@ -1,0 +1,44 @@
+// X-CENTER - ABSOLUTE POSITIONING
+@mixin pos-abs-x {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin img-overflow() {
+  overflow: hidden;
+  // min-height: $min-height;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@mixin para() {
+  margin: 0;
+  font-family: $font-robotoCondensed;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.38px;
+  color: $blue-para;
+}
+
+
+@mixin card-heading() {
+  font-family: $font-robotoCondensed;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 0.95;
+  letter-spacing: 0.63px;
+  color: $blue-heading;
+
+  @media #{$media-phone} {
+    font-size: 50px;
+  }
+}
+
+@mixin h-auto() {
+  height: auto !important;
+}

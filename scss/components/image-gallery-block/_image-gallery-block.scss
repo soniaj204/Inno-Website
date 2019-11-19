@@ -1,0 +1,61 @@
+.image-gallery-block-wrapper {
+  
+  .inner-wrapper {
+    margin: 0 0 15px 0;
+    @extend .h-100;
+
+    @media #{$media-phone} {
+      @include h-auto;
+    }
+  
+  }
+  .img {
+    overflow: hidden;
+    height: calc(100% - 15px);
+    position: relative;
+
+    @media #{$media-phone} {
+      height: auto;
+    }
+
+    img {
+      width: 100%;
+      @extend .h-100;
+      object-fit: cover;
+
+      @media #{$media-phone} {
+        @include h-auto;
+      }
+    }
+
+    .caption {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(to right, rgba(240,90,40, 0.9), rgba(5,67,113, 0.9));
+      width: 100%;
+      height: 100%;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        height: 100%;
+        text-align: center;
+        cursor: pointer;
+
+        span {
+          @include para;
+          color: $white;
+
+          b {
+            @extend .h3;
+            display: block;
+            margin: 10px 0 0 0;
+          }
+        }
+      }
+    }
+  }
+}

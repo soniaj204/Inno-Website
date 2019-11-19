@@ -1,0 +1,137 @@
+footer {
+  padding: 100px 0 0;
+
+  .inner-wrapper {
+    padding: 0 0 100px 0;
+  }
+
+  .copyright {
+    background: rgba($black, 0.04);
+    padding: 35px 0;
+
+    p {
+    }
+  }
+
+  .logo {
+    margin: 0 0 30px 0;
+    display: inline-block;
+  }
+
+  .social-icons {
+    margin: 0 0 70px 0;
+
+    ul {
+      padding: 0;
+      display: flex;
+
+      li {
+        list-style: none;
+        margin: 0 10px 0 0;
+        width: 36px;
+        height: 36px;
+        border: solid 1px $primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+
+        a {
+          display: block;
+
+          img {
+            display: block;
+            margin: 0 auto;
+            max-width: 18px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .logos {
+    p {
+      margin: 0 0 20px 0;
+    }
+
+    ul {
+      padding: 0;
+      display: flex;
+
+      li {
+        list-style: none;
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+
+  .links {
+    p.large {
+      color: $primary;
+      padding: 0 0 25px 0;
+    }
+
+    ul {
+      padding: 0 0 50px 0;
+      li {
+        list-style: none;
+        a {
+          @include para;
+        }
+
+        p {
+          margin: 0 0 25px 0;
+          b {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .signup-form {
+    border: 3px solid $primary;
+    padding: 40px;
+    position: relative;
+
+    .lines {
+      position: absolute;
+      left: 40px;
+      top: -25px;
+      > div {
+        display: flex;
+        align-items: center;
+        div {
+          width: 2px;
+          height: 50px;
+          background: $primary;
+          margin: 0 9px 0 0;
+          position: relative;
+        }
+      }
+    }
+
+    p {
+      padding: 0 0 20px 0;
+    }
+
+    .form-group {
+      margin: 0 0 20px 0;
+
+      label {
+        display: none;
+      }
+    }
+
+    button {
+      height: 50px;
+      line-height: 50px;
+      padding: 0 50px;
+      font-size: 22px;
+      color: $white;
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
+  }
+}

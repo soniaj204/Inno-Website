@@ -1,0 +1,173 @@
+// BIG CIRCLE
+.big-circle {
+  width: 440px;
+  height: 440px;
+  border: 5px solid;
+  border-radius: 50%;
+}
+
+// HEXAGON
+.hexagon {
+  position: absolute;
+  width: 40px;
+  height: 23.09px;
+  background-color: #ffffff;
+  border-left: solid 5px;
+  border-right: solid 5px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 28.28px;
+    height: 28.28px;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background-color: inherit;
+    left: 0.8579px;
+    top: -14.1421px;
+    border-top: solid 7.0711px $primary;
+    border-right: solid 7.0711px $primary;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 28.28px;
+    height: 28.28px;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background-color: inherit;
+    left: 0.8579px;
+    bottom: -14.1421px;
+    border-bottom: solid 7.0711px $primary;
+    border-left: solid 7.0711px $primary;
+  }
+}
+
+// TRIANGLE
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 57px solid $blue;
+}
+
+// DOTS
+.dots-group {
+  .rowwrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > div {
+      margin: 12px;
+      width: 6px;
+      height: 6px;
+    }
+  }
+}
+
+// LINES
+.lines {
+  > div {
+    display: flex;
+    align-items: center;
+    div {
+      width: 2px;
+      height: 50px;
+      margin: 0 9px 0 0;
+      position: relative;
+    }
+  }
+
+  &.lines-vertical {
+    > div {
+      display: block;
+
+      div {
+        height: 2px;
+        background: $primary;
+        margin: 0 0 9px 0;
+        width: 100px;
+      }
+    }
+  }
+}
+
+// SQUARE
+.square {
+  
+}
+
+// PLUS
+.plus {
+  width: 20px;
+  height: 5px;
+  position: absolute;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    width: 5px;
+    height: 20px;
+    background: inherit;
+    position: absolute;
+    top: -8px;
+    left: 8px;
+  }
+}
+
+// CIRCLE WITH LINES
+.circle {
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    div {
+      height: 2px;
+      width: 140px;
+      transform: rotate(-45deg);
+      position: absolute;
+
+      &:nth-child(1) {
+        top: 7px;
+        left: -50px;
+      }
+
+      &:nth-child(2) {
+        top: 21px;
+        left: -50px;
+      }
+
+      &:nth-child(3) {
+        top: 37px;
+        left: -50px;
+      }
+
+      &:nth-child(4) {
+        top: 53px;
+        left: -50px;
+      }
+
+      &:nth-child(5) {
+        top: 67px;
+        left: -50px;
+      }
+
+      &:nth-child(6) {
+        top: 83px;
+        left: -50px;
+      }
+
+      &:nth-child(7) {
+        top: 101px;
+        left: -50px;
+      }
+    }
+  }
