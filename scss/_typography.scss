@@ -7,10 +7,13 @@ h1 {
 }
 
 h3 {
-  font-size: 35px;
+  // font-size: 35px;
+  // line-height: 1.06;
+  // letter-spacing: 0.55px;
   font-weight: bold;
-  line-height: 1.06;
-  letter-spacing: 0.55px;
+  font-size: 40px;
+  line-height: 0.95;
+  letter-spacing: 0.63px;
   font-family: $font-robotoCondensed;
   color: $blue-heading;
 }

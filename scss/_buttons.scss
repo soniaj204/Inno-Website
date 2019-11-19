@@ -5,11 +5,12 @@
     letter-spacing: 0.38px;
     color: $primary;
     text-decoration: underline;
+    font-family: $font-robotoCondensed;
   
     span {
       background: url(../images/arrow-right-orange.svg) scroll no-repeat right
         center;
-      padding: 0 53px 0 0;
+      padding: 0 73px 0 0;
       position: relative;
       transition: padding 0.5s;
     }
@@ -18,7 +19,7 @@
       color: $primary-hover;
       text-decoration: underline;
       span {
-        padding: 0 63px 0 0;
+        padding: 0 83px 0 0;
       }
     }
   }
@@ -27,6 +28,7 @@
   .btn {
     border-radius: 0;
     transition: padding 0.5s;
+    font-family: $font-robotoCondensed;
   
     &.btn-primary {
       background-color: $primary;
@@ -43,11 +45,11 @@
       background: transparent;
       color: $blue-heading;
       text-decoration: none;
-      padding: 0 40px;
-      height: 68px;
-      line-height: 68px;
-      font-size: 22px;
-      font-family: $font-robotoCondensed;
+      padding: 0 20px 0 30px;
+    height: 88px;
+    line-height: 88px;
+    font-size: 22px;
+      
 
       @media #{$media-phone} {
         padding: 0 30px;
@@ -57,16 +59,17 @@
       span {
         background: url(../images/arrow-right-blue.svg) scroll no-repeat right
           center;
+          padding: 0 64px 0 0;
       }
   
       &:hover {
         background-color: transparent;
         border-color: $secondary-hover;
         color: $secondary-hover;
-        padding-right: 30px;
+        // padding-right: 30px;
   
         span {
-  
+          padding: 0 64px 0 0;
         }
       }
     }

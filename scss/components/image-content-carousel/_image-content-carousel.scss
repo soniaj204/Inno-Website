@@ -16,8 +16,8 @@
       }
 
       .content {
-        width: 50%;
-        min-width: 50%;
+        width: 54%;
+        min-width: 54%;
         background: $grey-bg;
         padding: 120px 100px 140px;
         position: relative;
@@ -73,13 +73,13 @@
         }
 
         .btn {
-          margin: 60px 0 0 0;
+          margin: 80px 0 0 0;
         }
       }
 
       .sideblock {
-        width: calc(50% + 100px);
-        min-width: calc(50% + 100px);
+        width: calc(50% + 120px);
+        min-width: calc(50% + 120px);
         position: relative;
         left: -500px;
         opacity: 0;
@@ -96,7 +96,7 @@
         }
 
         &.data-animate {
-          left: -100px;
+          left: -120px;
           transition: left 1.0s cubic-bezier(0.785, 0.135, 0.15, 0.86);
           opacity: 1;
 
@@ -130,8 +130,8 @@
 }
 
 .slick-dots {
-  width: calc(50% + 100px);
-  left: calc(50% - 100px);
+  width: calc(50% + 120px);
+  left: calc(50% - 120px);
   position: absolute;
   bottom: 60px;
 

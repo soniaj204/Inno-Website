@@ -28,14 +28,15 @@
 
 @mixin card-heading() {
   font-family: $font-robotoCondensed;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bold;
-  line-height: 0.95;
-  letter-spacing: 0.63px;
+  line-height: 1.06;
+  letter-spacing: 0.55px;
   color: $blue-heading;
+  
 
   @media #{$media-phone} {
-    font-size: 50px;
+    
   }
 }
 

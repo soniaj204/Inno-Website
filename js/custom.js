@@ -22,7 +22,7 @@ $(function() {
     useTransform: true,
     cssEase: 'cubic-bezier(0.785, 0.135, 0.15, 0.86)',
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 8000,
     fade: false,
     speed: -200,
     pauseOnFocus: false,

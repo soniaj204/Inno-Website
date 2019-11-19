@@ -2,7 +2,7 @@ footer {
   padding: 100px 0 0;
 
   .inner-wrapper {
-    padding: 0 0 100px 0;
+    padding: 0 0 10px 0;
   }
 
   .copyright {
@@ -124,10 +124,17 @@ footer {
       }
     }
 
+    .form-check {
+      margin: 0 0 2px 0;
+      label {
+        display: block;
+      }
+    }
+
     button {
       height: 50px;
       line-height: 50px;
-      padding: 0 50px;
+      padding: 0 30px;
       font-size: 22px;
       color: $white;
       letter-spacing: 0.5px;
