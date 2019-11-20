@@ -1,76 +1,76 @@
 .link {
-    font-family: $font-helvetica;
-    font-size: 24px;
-    line-height: 2;
-    letter-spacing: 0.38px;
-    color: $primary;
+  font-family: $font-helvetica;
+  font-size: 24px;
+  line-height: 2;
+  letter-spacing: 0.38px;
+  color: $primary;
+  text-decoration: underline;
+  font-family: $font-robotoCondensed;
+
+  span {
+    background: url(../images/arrow-right-orange.svg) scroll no-repeat right
+      center;
+    padding: 0 73px 0 0;
+    position: relative;
+    -webkit-transition: padding 0.5s;
+    transition: padding 0.5s;
+  }
+
+  &:hover {
+    color: $primary-hover;
     text-decoration: underline;
-    font-family: $font-robotoCondensed;
-  
     span {
-      background: url(../images/arrow-right-orange.svg) scroll no-repeat right
-        center;
-      padding: 0 73px 0 0;
-      position: relative;
-      transition: padding 0.5s;
-    }
-  
-    &:hover {
-      color: $primary-hover;
-      text-decoration: underline;
-      span {
-        padding: 0 83px 0 0;
-      }
+      padding: 0 83px 0 0;
     }
   }
-  
-  
-  .btn {
-    border-radius: 0;
-    transition: padding 0.5s;
-    font-family: $font-robotoCondensed;
-  
-    &.btn-primary {
-      background-color: $primary;
-      border-color: $primary;
-  
-      &:hover {
-        background-color: $primary-hover;
-        border-color: $primary-hover;
-      }
+}
+
+.btn {
+  border-radius: 0;
+  -webkit-transition: padding 0.5s;
+  transition: padding 0.5s;
+  font-family: $font-robotoCondensed;
+
+  &.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+
+    &:hover {
+      background-color: $primary-hover;
+      border-color: $primary-hover;
     }
-  
-    &.btn-outline-secondary {
-      border-color: $blue-heading;
-      background: transparent;
-      color: $blue-heading;
-      text-decoration: none;
-      padding: 0 20px 0 30px;
+  }
+
+  &.btn-outline-secondary {
+    border-color: $blue-heading;
+    background: transparent;
+    color: $blue-heading;
+    text-decoration: none;
+    padding: 0 20px 0 30px;
     height: 88px;
     line-height: 88px;
     font-size: 22px;
-      
 
-      @media #{$media-phone} {
-        padding: 0 30px;
-        font-size: 20px;
-      }
-  
+    @media #{$media-phone} {
+      padding: 0 30px;
+      font-size: 20px;
+    }
+
+    span {
+      background: url(../images/arrow-right-blue.svg) scroll no-repeat right
+        center;
+      padding: 0 64px 0 0;
+    }
+
+    &:hover {
+      background-color: transparent;
+      border-color: $secondary-hover;
+      color: $secondary-hover;
+      // padding-right: 30px;
+
       span {
-        background: url(../images/arrow-right-blue.svg) scroll no-repeat right
-          center;
-          padding: 0 64px 0 0;
-      }
-  
-      &:hover {
-        background-color: transparent;
-        border-color: $secondary-hover;
-        color: $secondary-hover;
-        // padding-right: 30px;
-  
-        span {
-          padding: 0 64px 0 0;
-        }
+        padding: 0 64px 0 0;
       }
     }
   }
+}

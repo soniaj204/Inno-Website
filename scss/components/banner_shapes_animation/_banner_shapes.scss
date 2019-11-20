@@ -22,7 +22,6 @@
     width: 28.28px;
     height: 28.28px;
     -webkit-transform: scaleY(0.5774) rotate(-45deg);
-    -ms-transform: scaleY(0.5774) rotate(-45deg);
     transform: scaleY(0.5774) rotate(-45deg);
     background-color: inherit;
     left: 0.8579px;
@@ -38,7 +37,6 @@
     width: 28.28px;
     height: 28.28px;
     -webkit-transform: scaleY(0.5774) rotate(-45deg);
-    -ms-transform: scaleY(0.5774) rotate(-45deg);
     transform: scaleY(0.5774) rotate(-45deg);
     background-color: inherit;
     left: 0.8579px;
@@ -60,8 +58,14 @@
 // DOTS
 .dots-group {
   .rowwrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 
     > div {
@@ -75,7 +79,11 @@
 // LINES
 .lines {
   > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     div {
       width: 2px;
@@ -101,7 +109,6 @@
 
 // SQUARE
 .square {
-  
 }
 
 // PLUS
@@ -124,50 +131,51 @@
 
 // CIRCLE WITH LINES
 .circle {
-    border-radius: 50%;
-    overflow: hidden;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  div {
+    height: 2px;
+    width: 140px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
     position: absolute;
-    width: 75px;
-    height: 75px;
-    div {
-      height: 2px;
-      width: 140px;
-      transform: rotate(-45deg);
-      position: absolute;
 
-      &:nth-child(1) {
-        top: 7px;
-        left: -50px;
-      }
+    &:nth-child(1) {
+      top: 7px;
+      left: -50px;
+    }
 
-      &:nth-child(2) {
-        top: 21px;
-        left: -50px;
-      }
+    &:nth-child(2) {
+      top: 21px;
+      left: -50px;
+    }
 
-      &:nth-child(3) {
-        top: 37px;
-        left: -50px;
-      }
+    &:nth-child(3) {
+      top: 37px;
+      left: -50px;
+    }
 
-      &:nth-child(4) {
-        top: 53px;
-        left: -50px;
-      }
+    &:nth-child(4) {
+      top: 53px;
+      left: -50px;
+    }
 
-      &:nth-child(5) {
-        top: 67px;
-        left: -50px;
-      }
+    &:nth-child(5) {
+      top: 67px;
+      left: -50px;
+    }
 
-      &:nth-child(6) {
-        top: 83px;
-        left: -50px;
-      }
+    &:nth-child(6) {
+      top: 83px;
+      left: -50px;
+    }
 
-      &:nth-child(7) {
-        top: 101px;
-        left: -50px;
-      }
+    &:nth-child(7) {
+      top: 101px;
+      left: -50px;
     }
   }
+}

@@ -4,14 +4,20 @@
   }
 
   .carousel-wrapper {
-   
     .carousel-innerwrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       position: relative;
       overflow: hidden;
 
       @media #{$media-phone} {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
       }
 
@@ -32,6 +38,8 @@
 
         @media #{$media-phone} {
           width: 100%;
+          -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
           order: 2;
           left: auto;
           padding: 70px;
@@ -40,21 +48,24 @@
         &.data-animate {
           opacity: 1;
           left: 0;
-          transition: left 1.0s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+          -webkit-transition: left 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+          transition: left 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
           @media #{$media-phone} {
+            -webkit-transition: none;
             transition: none;
             left: auto;
           }
         }
 
-
         &.data-animate-rev {
           opacity: 0;
           left: -1000px;
-          transition: left 1.0s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+          -webkit-transition: left 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+          transition: left 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
           @media #{$media-phone} {
+            -webkit-transition: none;
             transition: none;
             left: auto;
           }
@@ -91,13 +102,16 @@
 
         @media #{$media-phone} {
           width: 100%;
+          -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
           order: 1;
           left: 0;
         }
 
         &.data-animate {
           left: -120px;
-          transition: left 1.0s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+          -webkit-transition: left 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+          transition: left 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
           opacity: 1;
 
           @media #{$media-tablet} {
@@ -105,18 +119,19 @@
           }
 
           @media #{$media-phone} {
+            -webkit-transition: none;
             transition: none;
             left: 0;
           }
         }
 
-
         &.data-animate-rev {
           opacity: 0;
           left: -500px;
-          transition: -left 1.0s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+          transition: -left 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
           @media #{$media-phone} {
+            -webkit-transition: none;
             transition: none;
             left: auto;
           }
@@ -159,6 +174,7 @@
       opacity: 0.28;
       background-color: $secondary;
       padding: 0;
+      -webkit-transition: all 0.5s;
       transition: all 0.5s;
 
       &::before {

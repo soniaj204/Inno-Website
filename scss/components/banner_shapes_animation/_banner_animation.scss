@@ -47,6 +47,7 @@
       position: absolute;
       top: -32px;
       left: 128px;
+      -webkit-transform: rotate(45deg);
       transform: rotate(45deg);
     }
 
@@ -111,6 +112,7 @@
       border-top: 10px solid transparent;
       border-bottom: 10px solid transparent;
       border-left: 10px solid $primary;
+      -webkit-transform: rotate(133deg);
       transform: rotate(133deg);
       position: absolute;
       top: -32px;
@@ -184,7 +186,6 @@
         width: 14.14px;
         height: 14.14px;
         -webkit-transform: scaleY(0.5774) rotate(-45deg);
-        -ms-transform: scaleY(0.5774) rotate(-45deg);
         transform: scaleY(0.5774) rotate(-45deg);
         background-color: inherit;
         left: -2.0711px;
@@ -201,7 +202,6 @@
         width: 14.14px;
         height: 14.14px;
         -webkit-transform: scaleY(0.5774) rotate(-45deg);
-        -ms-transform: scaleY(0.5774) rotate(-45deg);
         transform: scaleY(0.5774) rotate(-45deg);
         background-color: inherit;
         left: -2.0711px;
@@ -224,6 +224,7 @@
       border-top: 30px solid transparent;
       border-bottom: 30px solid transparent;
       border-left: 30px solid $primary;
+      -webkit-transform: rotate(133deg);
       transform: rotate(133deg);
       position: absolute;
       top: 141px;

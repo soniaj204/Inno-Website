@@ -2,6 +2,7 @@
 @mixin pos-abs-x {
   position: absolute;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
@@ -12,6 +13,7 @@
   img {
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
   }
 }
@@ -25,7 +27,6 @@
   color: $blue-para;
 }
 
-
 @mixin card-heading() {
   font-family: $font-robotoCondensed;
   font-size: 35px;
@@ -33,10 +34,8 @@
   line-height: 1.06;
   letter-spacing: 0.55px;
   color: $blue-heading;
-  
 
   @media #{$media-phone} {
-    
   }
 }
 
